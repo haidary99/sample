@@ -1,0 +1,69 @@
+<!--here rh na5ud icons from a website esmu Font Awesome w n7tun bel page tb3na-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Font Aweseom-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Document</title>
+</head>
+<body>
+    <p>Search logo <i class="fas fa-search"></i></p> <!--the i stands for icon and we need to spcify the class inside, fas stands for font awesome-->
+    <br> <!--Line jdid-->
+    <i class="fas fa-search fa-xs"></i> <!--size xtra small-->
+    <i class="fas fa-search fa-md"></i> <!--size medium-->
+    <i class="fas fa-search fa-lg"></i> <!--size large-->
+    <i class="fas fa-search fa-2x"></i> <!--size 2x...-->
+    <i class="fas fa-search fa-3x"></i>
+    <i class="fas fa-search fa-5x"></i>
+    <i class="fas fa-search fa-10x"></i>
+    <br>
+    <a href="http://www.twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter fa-2x"></i></a> <!--aria labels give the screen readers the ability to know where these links will take u to cuz screen readers doesnt show the twitter logo or logos in general-->
+    <br>
+    <br>
+    <!--types of links-->
+    <a href="http://www.twitter.com">this will take you to twitter</a> <!--absolute reference-->
+    <br>
+    <a href="testing.html">different page I made</a> <!--Relative reference, hun bs 7tet esm el file el tani fwrn l2nu they are in the same folder, iza kan in another folder u need to put the folder name first--> 
+    <br>
+    <a href="http://www.gov.uk"><img src="/Users/haidary/Desktop/Xcode/HackingWithSwift Resources/SwiftUI/project2-files/UK@3x.png" alt="uk flag"></a>
+    <br>
+    <!--video element tag example, there are some attributes like width height ofcourse as well as autoplay mbayne shu y3ni, also fee Loop, and control which specifies when the user can stop and play the video. loop, control and autoplay are boolean attributes which means we only need to mention them withoud any values-->
+    <video src="/Users/haidary/Desktop/Music/videos/Pop Smoke  Hello Audio ft A Boogie Wit da Hoodie_1080p.mp4" width="600" controls loop>Your Browser does not support playing this video</video>
+    <br>
+    <!--audio element tag example, we also have autoplay, loop and controls attributes here as well as buffered, muted and volume-->
+    <audio src="/Users/haidary/Desktop/Music/Bensound Piano Moment - Intimate Piano Royalty Free Music.mp3" controls>Pianoooo</audio>
+    <br>
+    <!--NOTE: In both Video and audio elements we can specify from which part of the element it should start and how long it should las for, msln .ext#t=5, 25 means start from sec 5 and end at sec 25, .ext=, 39 means starts from the beginning and play till sec 39, .ext#t=42 means start from sec 42 and continue from there-->
+    <audio src="/Users/haidary/Desktop/Music/Bensound Piano Moment - Intimate Piano Royalty Free Music.mp3#t=75" controls loop>Pianoooo</audio> <!--start from the 70th second-->
+
+    <!--Tables-->
+    <table border="1"> <!--the border makes the table look way better visually-->
+        <tr> <!--st3ml <th> w2t bdk t7t el main attributes bel columns-->
+            <th>Child Name:   </th>
+            <th>Parent Name:   </th>
+        </tr>
+        <tr>
+            <td rowspan="2">Catherine</td> <!--<td> hye lal normal cells, we can combine multiple rows and columns using rowspan and colspan attributes. <td rowspan="2">Catherine</td> y3ni el Catherine name rh ya5ud 2 rows so 2 lines basically-->
+            <td>Michael McCarthy</td>        
+        </tr>
+        <tr>
+            <td>Colleen McCarthy</td>
+        </tr>
+        <tr>
+            <td>Maggie</td>
+            <td>Sheila McGee</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Edward</td>
+            <td>Catherine Howard</td>
+        </tr>
+        <tr>
+            <td>Jeff Howard</td>
+        </tr>
+    </table>
+
+</body>
+</html>

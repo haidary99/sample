@@ -1,0 +1,126 @@
+<!-- html tree: 3 main parts: 1.the html doc specification w b3den ttfr3 into 2 and 3, 2.the head, 3.the body -->
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My First Page</title> <!--this is the title in the tab fu2-->
+        <link rel="icon" type="image/png" href="/Users/haidary/Desktop/Xcode/HackingWithSwift Resources/Classic/project6-files/uk.png"> <!--this is the mini logo that u show above in the tab, cannot be jpeg or gif-->
+    </head>
+    <body id="top"> <!--the id is for internal referencing-->
+        <h1>Yo</h1>
+        <h2>this is h2 size</h2>
+        <p><strong>Hello</strong> Everybody!!</p> <!-- el strong element bt3ml el text bold, fini kman est3ml <b> Hello </b> -->
+        <p>hi <em>how</em> are you doing</p> <!-- el em element bt3ml el text italic, fini kman est3ml <i> how </i>  -->
+        <p>Check out this website <a href="https://google.com" target="_blank">surprise</a></p> <!-- the <a> element let us put a link to another website, target="_blank" will make google open in a NEW TAB not the current one, the word surprise is the clickable word that will take us to the desired website, this could be an image or text...etc. -->
+        <ul>   <!-- hai rmz unordered list -->
+            <li>Orange</li> <!-- li y3ni list item -->
+            <li>Apple</li>
+            <li>Banana</li>
+        </ul>
+        <ol start="5"> <!-- hai rmz ordered list -->
+            <li>Open the door</li>
+            <li>Jump from the window</li>
+            <li>You dead</li>
+        </ol>
+        <dl> <!--description list-->
+            <dt>study:</dt> <!--description term-->
+            <dd>The devotion of time and attention to acquiring knowledge on an academic subject, especially by means of books</dd> <!--actual description-->
+            <dt>design:</dt>
+            <dd>A plan or drawing produced to show the look and function or workings of a building, garment, or other object before it is built or made</dd>
+            <dt>business:</dt>
+            <dd>Purpose, planning, or intention that exists or is thought to exist behind an action, fact, or material object</dd>
+            <dt>work:</dt>
+            <dd>A person's regular occupation, profession, or trade</dd>
+          </dl>
+          btw
+          <!--Nested lists example-->
+          <ol>
+            <li>Walk the dog</li>
+            <li>Fold laundry</li>
+            <li>
+              Go to the grocery and buy:
+              <ul>
+                <li>Milk</li>
+                <li>Bread</li>
+                <li>Cheese</li>
+              </ul>
+            </li>
+            <li>Mow the lawn</li>
+            <li>Make dinner</li>
+          </ol>
+
+          <!--in images, the alt text attribute is important because it shows the meaning of the pic in case it didn't load for some users and also very importantly it provides semantic meaning for search engines so search engines will realize what the content of the pic is, eza 3m t7t sura la logo or styling mu bel drura t7t alt text mumkn ttrka fadye-->
+        <img src="/Users/haidary/Desktop/NUFC/gettyimages-452755099-2048x2048.jpeg" 
+             width="1000px" alt="Alan-Shearer"> <!--this is a local picture so i can adjust the width and height, avoid hardcoding the width and height cuz the pic might look good on one screen it might not on another-->
+        
+        <img src="/Users/haidary/Desktop/NUFC/gettyimages-1179382077-2048x2048.jpeg" 
+             width="50%"    alt="Gucci"> <!--local pictures can have their size adjusted by percentage too and this is dynamic meaning if u change the browser window size, the picture also adjust accordingly, here 50% means make the pic 50% of the window size-->
+
+        <img src="https://images.squarespace-cdn.com/content/v1/55a86f5be4b04793ffcf2904/1511892976158-X75GR0432NHPCZI7YRKA/Alan-Shearer.jpg?format=750w" alt="alan shearer">
+        <p>
+          <a href="#top">back to top</a> <!-- brings us back to the top of the page, this is a type of relative/internal reference -->
+        </p>
+
+        <!-- Making a table -->
+        <table>
+            <caption>Design and Front-End Development Books</caption> <!-- title for the table -->
+            <thead> <!--table head-->
+                <tr> <!-- table row -->
+                  <th scope="col">Item</th>
+                  <th scope="col">Availability</th>
+                  <th scope="col">Qty</th>
+                  <th scope="col">Price</th>
+                </tr> <!--End of first row-->
+              </thead> 
+              <tbody>
+                <tr>
+                    <td>Dont Make Me Think by Steve Krug</td> <!-- table cells within a row -->
+                    <td>In Stock</td>
+                    <td>1</td>
+                    <td>$30.02</td>
+                </tr>
+                <tr>
+                    <td>A Project Guide to UX Design by Russ Unger & Carolyn Chandler</td>
+                    <td>In Stock</td>
+                    <td>2</td>
+                    <td>$52.94</td>
+                </tr>
+                <tr>
+                    <td>Introducing HTML5 by Bruce Lawson & Remy Sharp</td>
+                    <td>Out of Stock</td>
+                    <td>1</td>
+                    <td>$22.23</td>
+                </tr>
+                <tr>
+                    <td>Bulletproof Web Design by Dan Cederholm</td>
+                    <td>In Stock</td>
+                    <td>1</td>
+                    <td>$30.17</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                  <td>Subtotal</td>
+                  <td></td>
+                  <td></td>
+                  <td>$135.36</td>
+                </tr>
+                <tr>
+                  <td>Tax</td>
+                  <td></td>
+                  <td></td>
+                  <td>$13.54</td>
+                </tr>
+                <tr>
+                  <td>Total</td>
+                  <td></td>
+                  <td></td>
+                  <td>$148.90</td>
+                </tr>
+              </tfoot>
+          </table>
+
+    </body>
+</html>

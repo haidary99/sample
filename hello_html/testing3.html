@@ -1,0 +1,38 @@
+<!--NOTES:
+    Use <p> and <div> too write blocks of text
+    However, it is preferred to use <header>, <nav>, <footer>, <figure> where possible because they have a more semantic meaning
+    There is also <article>, <aside>, <section>, <maim>, ...
+    <hr> puts a horizontal line that extends across the screen
+    If there is an address in the webpage, put it in the <address> block tag cuz screen readers will directly find the address this way
+    The <details> is used with <summary> to show a drop down detail when clicked on the summary, this is not supported by firefox yet
+    These tags above are all block tags. Remember inline tags can flow next to each other and don't cause a line break before and after the element. We have seen this with links and images
+    Here are some inline tags: 
+    1. The <cite> tag defines the title of a creative work like book movie etc and makes it italic
+    2. The <abbr> tag will show text when u hover over a specific word or text
+    3. In the <code> tag, u put msln an example of code and it will show in a different manner
+    4. using <sub> and <sup> fina ndif 2us msln aw hamesh
+    inline tags that need some knowledge and javascript to make them work how the coder wants exactly:
+    <button> which literally shows a button
+    <meter> shows a bar that we can fill to a specific point
+    <progress> also shows a bar that can be filled dynamically according to a specific event
+    <iframe> used to display a webpage within a webpage and it shows content dynamically according to width and height
+    -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <button>Open</button>
+        <br> <br>
+        <meter min="0" max="100" value="50">%50</meter>
+        <br> <br>
+        <progress value="70" max="100">%70</progress>
+        <br> <br>
+        <iframe src="https://www.google.com"></iframe>
+    </body>
+    </html>

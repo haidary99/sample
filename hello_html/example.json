@@ -1,0 +1,14 @@
+
+{
+    "first_name": "John",
+    "Last_name": "Smith",
+    "age": 30,
+    "is_male": true,
+    "country": "United States",
+    "siblings": [
+        "Brad",
+        "Jor",
+        "Brianna",
+        "Kim" 
+    ]
+}
